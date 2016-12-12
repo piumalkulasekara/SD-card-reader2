@@ -9,7 +9,7 @@ void setup()
   if (!SdPlay.init(SSDA_MODE_FULLRATE | SSDA_MODE_MONO | SSDA_MODE_AUTOWORKER)) {
     while(1); // Error while initialization of SD card -> stop.
   } 
-  
+
   // Select file to play
   if(!SdPlay.setFile("music2.AFM")) {
     while(1); // Error file not found -> stop.
